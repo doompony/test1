@@ -19,7 +19,7 @@ jobs:
 
       - name: commit to gh-pages
         run: |
-          git config --global user.email "publish@littlelink.com"
+          git config --global user.email "ppublish@doompony.links.com"
           git config --global user.name "Publisher"
           git checkout -b gh-pages
           git add .
