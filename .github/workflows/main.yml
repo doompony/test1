@@ -2,9 +2,9 @@ name: 🌱 Deploy site
 
 on:
   workflow_dispatch:
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -19,7 +19,7 @@ jobs:
 
       - name: commit to gh-pages
         run: |
-          git config --global user.email "ppublish@doompony.links.com"
+          git config --global user.email "publish@doompony.links.com"
           git config --global user.name "Publisher"
           git checkout -b gh-pages
           git add .
